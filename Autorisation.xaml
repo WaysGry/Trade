@@ -1,0 +1,25 @@
+﻿<Page x:Class="Trade.Autorisation"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Trade"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Background="White"
+      Title="Autorisation">
+
+    <Grid>
+        
+        <Label Content="Введите пароль" HorizontalAlignment="Center" Margin="0,352,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Symbol" Foreground="Black" FontWeight="Bold" FontSize="36" Width="570"/>
+        <Label Content="Введите логин" HorizontalAlignment="Left" Margin="675,195,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Symbol" Foreground="Black" FontSize="36" FontWeight="Bold" Background="White" Width="562"/>
+        <Button x:Name="Enter_Btn" Content="Войти" HorizontalAlignment="Center" Margin="0,823,0,0" VerticalAlignment="Top" Width="570" Height="105" FontFamily="Segoe UI Symbol" FontSize="48" Background="#FF498C51" Foreground="White" BorderBrush="White" Click="Enter_Btn_Click" FontWeight="Bold"/>
+        <PasswordBox x:Name="Password"  HorizontalAlignment="Center" Margin="0,415,0,0"  VerticalAlignment="Top" Width="570" FontFamily="Segoe UI Symbol" FontSize="36" FontWeight="Bold" Height="80" SelectionBrush="#FF020202" BorderBrush="Black"/>
+        <TextBox x:Name="Login"  HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="570" FontFamily="Segoe UI Symbol" FontSize="36" FontWeight="Bold" Height="80" SelectionBrush="Black" BorderBrush="Black" Margin="0,253,0,0"/>
+        <Label x:Name="Code" Content="Введите код подтверждения" HorizontalAlignment="Left" Margin="675,535,0,0" VerticalAlignment="Top" Foreground="Black" FontFamily="Segoe UI Symbol" FontSize="36" FontWeight="Bold" Width="562"/>
+        <TextBox x:Name="Cod"  HorizontalAlignment="Center" Margin="0,673,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="570" FontFamily="Segoe UI Symbol" FontSize="36" FontWeight="Bold" Height="80" BorderBrush="Black" SelectionBrush="Black"/>
+        <TextBox TextDecorations="Strikethrough" x:Name="Captcha_Box"  HorizontalAlignment="Left" Margin="675,598,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345" FontFamily="Segoe UI Symbol" FontSize="48" FontWeight="Bold" Height="75" Background="#FFFBFBFB" BorderBrush="White" SelectionBrush="Black" IsEnabled="False" FontStyle="Italic"/>
+        <Image HorizontalAlignment="Left" Height="67" Margin="10,10,0,0" VerticalAlignment="Top" Width="71" Source="/logo.png"/>
+        <Label Content="ООО &quot;Цветы&quot;" HorizontalAlignment="Left" Height="51" Margin="82,26,0,0" VerticalAlignment="Top" Width="186" FontSize="24"/>
+    </Grid>
+</Page>

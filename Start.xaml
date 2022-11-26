@@ -1,0 +1,20 @@
+﻿<Page x:Class="Trade.Start"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Trade"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Background="White"
+      Title="Start">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="642" Margin="638,127,0,0" VerticalAlignment="Top" Width="638" Source="/logo.png" RenderTransformOrigin="0.509,0.509"/>
+        <Button Content="Авторизоваться" HorizontalAlignment="Center" Height="100" Margin="0,788,0,0" VerticalAlignment="Top" Width="632" FontSize="48" FontWeight="Bold" Foreground="White" BorderBrush="White" Background="#FF498C51" Click="Button_Click"/>
+        <Button Content="Войти без авторизации" HorizontalAlignment="Left" Height="104" Margin="644,914,0,0" VerticalAlignment="Top" Width="640" FontSize="48" FontWeight="Bold" Foreground="White" BorderBrush="#FFFDFDFD" Background="#FF498C51" Click="Button_Click_1">
+
+        </Button>
+        <Label Content="ООО &quot;Цветы&quot;" HorizontalAlignment="Center" Height="112" VerticalAlignment="Top" Width="471" FontSize="72"/>
+
+    </Grid>
+</Page>
